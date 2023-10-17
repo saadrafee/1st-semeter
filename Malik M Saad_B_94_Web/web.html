@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My project</title>
+        <style>
+            
+            .fixed{
+                position: fixed;
+                width: 100%;
+                border: 1px solid white;
+                border-color: white;
+                background-color: white;
+            }
+    .header{
+    
+        background-color: blue;
+     
+        border-radius: 5px;
+        margin-top: auto;
+    }
+    .header ul{
+        overflow: auto;
+    }
+    .header li {
+      
+        float :left;
+        list-style: none;
+        margin: 13px 20px;
+    }
+    .header li a{
+        color: aliceblue;
+        padding: 5px 5px;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 200px;
+      
+    } 
+    .header li a:hover
+    {
+        border: 1px solid rgb(255, 255, 255);
+background-color: rgb(106, 203, 241);
+    }
+    .sgin
+    {
+        position: absolute;
+       left: 80%;
+
+    }
+    .image
+    {
+        width: 10%;
+    }
+    .imageOrinentaion
+    {
+        position: absolute;
+        left: 44%;
+    }
+    .searchBar{
+         position: absolute;
+         left: 40%; 
+         margin-top: 8%; 
+         color: red;
+    }
+    .form
+    {
+        position: relative;
+
+ margin-top: 13%; 
+        background-color: blue;
+ border-radius: 5px;
+
+ padding: 10px;
+    }
+    .formorin
+    {
+     position: relative;
+     left: 10%;
+    }
+    .formorin2
+   {
+    position: relative;
+    left: 20%;
+   }
+   .formorin3
+{
+ position: relative;
+ left: 30%;
+}
+.formorin4
+{
+ position: relative;
+ left: 40%;
+}
+.filtersize
+{
+    width: 1%;
+}
+.formstyle
+{
+    /* color: aliceblue; */
+ padding: 5px 5px;
+ text-decoration: none;
+ border: 1px solid white;
+ border-radius: 10px;
+ color:blue;
+
+}
+.oggy
+{
+    padding: 4px;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.mri
+{
+    color: blue;
+ 
+    font-size: 17px;
+}
+.forms :hover
+{
+   
+    font-size: 14px; 
+    box-shadow: 2px 2px 2px black;   
+}.forms{
+    display: inline;
+    border: 0px solid black;
+    border-color: yellow;
+    color: black;
+}
+.card {
+    width: 15%;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: rgb(17, 0, 255);
+    margin: 20px;
+    margin-top: calc(120%px);
+
+    box-shadow: 2px 2px 20px;
+}
+.cropped {
+width: 150px; 
+height: 150px; 
+overflow: hidden;
+}
+.card:hover {
+    box-shadow: 2px 2px 10px black;
+width: 17%;
+height: 9%;
+}
+.size {
+    text-align: center;
+    padding: 4px;
+}
+.images img {
+    float: center;
+    width: 100%;
+    border-radius: 5px;}
+    .font {
+    color: white;
+    font-size: calc(100%);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    display: inline;
+}
+.diacription
+{
+    color: white;
+font-size: calc(70%);
+font-family: Arial, Helvetica, sans-serif;
+list-style: none; 
+}
+.cardpos
+{
+  position: absolute;
+  top: 300px;
+}
+</style>
+    </head>
+    <body>
+
+        <header>
+            
+                <nav class="header">
+                    <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="aboutUs.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="sgin">
+                            <li><a href="">Sgin Up</a></li>
+                            <li><a href="">Log In</a></li>
+                        </div>
+
+                    </ul>
+                </nav>
+            </header>
+        
+        <div class="imageOrinentaion">
+            <img src="img/logo1.png" class="image" alt="">
+        </div>
+        <div class="searchBar">
+            <input type="search" name="search" id="search" placeholder=" SearchNGOs" class="oggy">
+        </div>
+        <div class="form ">
+            <form>
+                <div class="forms">
+                    <select name="Country name" class="formorin formstyle "
+                        id="Country">
+                        <option value="Country" class="mri">Pakistan</option>
+                        <option value="Country" class="mri">Turkey</option>
+                        <option value="country" class="mri">India</option>
+                        <option value="country" class="mri">Namiba</option>
+                        <option value="country" class="mri">Nigeria</option>
+                        <option value="Country "Selected class="mri">Select
+                            Country</option>
+                    </select>
+                </div>
+                <div class="forms">
+                    <select name="category" class="formorin2 formstyle"
+                        id="category">
+
+                        <option value="category" class="mri"> Cancer</option>
+                        <option value="category" class="mri">Thalassemia</option>
+                        <option value="category" class="mri">Shelters</option>
+                        <option value="category" class="mri">Dialysis</option>
+                        <option value="category" class="mri">Education</option>
+                        <option value="category "Selected class="mri">Select
+                            category</option>
+                    </select>
+                </div>
+                <div class="forms">
+                    <select name="Recent Event" class="formorin3 formstyle"
+                        id="Events">
+                        <option value="Events" class="mri">Flood in Pakistan</option>
+                        <option value="Events" class="mri">Earthquake in Turkey</option>
+                        <option value="Events "Selected class="mri">Select
+                            Events</option>
+                    </select>
+                </div>
+                <div class="forms">
+                    <img src="img/filter.png" class="filtersize formorin4"
+                        alt="">
+                    <input type="reset" class="formorin4 formstyle" value="Clear filter">
+                </div>
+
+            </div>
+        </form>
+
+        <div class="cardpos">
+            <div class="card ">
+                <div class="images"><a href="shokatkhanm.html"><img
+                            src="img/shokatkhanm.png">
+
+                    </div>
+                    <div class="size">
+
+                        <p class="font">Shaukat Khanum</p>
+                        <a href="shokatkhanm.html">
+                            <p class="diacription">Shaukat Khanum Memorial
+                                Cancer Hospital and Research Centre cancer
+                                centre located in Lahore, Pakistan. It is a
+                                project of the Shaukat Khanum Memorial Trust,
+                                which is a charitable organization.</p>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="images"><a href="alkhidmant.html"><img
+                                src="img/ALKHIDMANT.png">
+
+                        </div>
+                        <div class="size">
+
+                            <p class="font">ALKHIDMANT</p>
+                            <a href="web.html">
+                                <p class="diacription">Alkhidmat Foundation
+                                    Pakistan is non-profit organization, fully
+                                    dedicated to humanitarian services.
+                                    Alkhidmat's workers and volunteers continue
+                                    to work tirelessly for the relief of
+                                    affected people across worldwide.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="images"><a href="edhi.html"><img
+                                    src="img/Edhi.jpg">
+
+                            </div>
+                            <div class="size">
+
+                                <p class="font">Edhi Foundation</p>
+                                <a href="edhi.html">
+                                    <p class="diacription">The Edhi Foundation
+                                        provides emergency assistance across the
+                                        entirety of Pakistan and
+                                        internationally. The foundation
+                                        provides, among many services, shelter
+                                        for the destitute, hospitals and medical
+                                        care, drug rehabilitation services.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="images"><a href="smile.html"><img
+                                        src="img/smile foundation .jpg">
+
+                                </div>
+                                <div class="size">
+
+                                    <p class="font">
+                                        Smile Foundation </p>
+                                    <a href="smile.html">
+                                        <p class="diacription">Smile Foundation
+                                            is an NGO in India directly
+                                            benefiting over 750,000 children and
+                                            their families every year, through
+                                            more than 350 live welfare projects
+                                            on education, healthcare,
+                                            livelihood, and women empowerment,
+                                            in over 1000 remote villages and
+                                            slums across 25 states of India.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card ">
+                                <div class="images"><a href="web.html"><img
+                                            src="img/Sundas foundation.jpeg">
+                                    </div>
+                                    <div class="size">
+
+                                        <p class="font">
+                                            Sundas Foundation </p>
+                                        <a href="web.html">
+                                            <p class="diacription">Sundas
+                                                Foundation is a Blood
+                                                Transfusion Center with the aim
+                                                to provide free of cost &
+                                                quality comprehensive treatment
+                                                to patients suffering from
+                                                Thalassemia, Hemophilia and
+                                                other blood disorders.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="card ">
+                                            <div class="images"><a
+                                                    href="web.html"><img
+                                                        src="img/Zindagi Trust.jpeg">
+
+                                                </div>
+                                                <div class="size">
+
+                                                    <p class="font">
+                                                        Zindagi Trust </p>
+                                                    <a href="web.html">
+                                                        <p class="diacription">Zindagi
+                                                            Trust | Non-Profit
+                                                            Organisation. Our
+                                                            work involves pilot
+                                                            projects of school
+                                                            reform at government
+                                                            schools and advocacy
+                                                            based on our best
+                                                            practices to change
+                                                            education policy.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="card ">
+                                                <div class="images"><a
+                                                        href="web.html"><img
+                                                            src="img/Transparent Hands .jpg">
+
+                                                    </div>
+                                                    <div class="size">
+
+                                                        <p class="font">
+                                                            Transparent Hands
+                                                        </p>
+                                                        <a href="web.html">
+                                                            <p
+                                                                class="diacription">Transparent
+                                                                Hands is
+                                                                platform for
+                                                                crowdfunding in
+                                                                the healthcare
+                                                                sector of
+                                                                Pakistan. We
+                                                                offer a complete
+                                                                range of free
+                                                                healthcare
+                                                                services and
+                                                                arranging
+                                                                medical camps
+                                                                for the
+                                                                underprivileged
+                                                                community of
+                                                                Pakistan
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card ">
+                                                    <div class="images"><a
+                                                            href="web.html"><img
+                                                                src="img/Insan Vakfi.jpg">
+                                                        </div>
+                                                        <div class="size">
+
+                                                            <p class="font">
+                                                                Insan Vakfi </p>
+                                                            <a href="web.html">
+                                                                <p
+                                                                    class="diacription">We
+                                                                    provide
+                                                                    emergency
+                                                                    aid to our
+                                                                    citizens
+                                                                    affected by
+                                                                    the
+                                                                    earthquake
+                                                                    in our
+                                                                    country! As
+                                                                    the Human
+                                                                    Foundation,
+                                                                    we support
+                                                                    our citizens
+                                                                    who were
+                                                                    harmed by
+                                                                    the
+                                                                    earthquake.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card ">
+                                                        <div class="images"><a
+                                                                href="web.html"><img
+                                                                    src="img/Pakistan Kidney Patients Association (PKPA) .png">
+                                                            </div>
+                                                            <div class="size">
+                                                                <p class="font">
+                                                                    Pakistan
+                                                                    Kidney
+                                                                    Patients
+                                                                    Association
+                                                                    (PKPA) </p>
+                                                                <a
+                                                                    href="web.html">
+                                                                    <p
+                                                                        class="diacription">PKPA
+                                                                        is a
+                                                                        Registered
+                                                                        Charity
+                                                                        Organization
+                                                                        for
+                                                                        kidney
+                                                                        patients
+                                                                    </p>
+                                                                    <br>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card ">
+                                                            <div class="images"><a
+                                                                    href="web.html"><img
+                                                                        src="img/fgrf.jpeg">
+                                                                </div>
+                                                                <div
+                                                                    class="size">
+                                                                    <p
+                                                                        class="font">
+                                                                        FGRF</p>
+                                                                    <a
+                                                                        href="web.html">
+                                                                        <p
+                                                                            class="diacription">Faizan
+                                                                            Global
+                                                                            Relief
+                                                                            Foundation
+                                                                            (FGRF),
+                                                                            a
+                                                                            welfare
+                                                                            division
+                                                                            of
+                                                                            Dawateislami
+                                                                            Dawateislami,
+                                                                            a
+                                                                            non-profitable
+                                                                            organization,
+                                                                            is
+                                                                            building
+                                                                            a
+                                                                            shelter
+                                                                            home
+                                                                            for
+                                                                            homeless
+                                                                            children
+                                                                            under
+                                                                            its
+                                                                            project
+                                                                            'Madani
+                                                                            Home'.
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </body>
+                                            </html>
